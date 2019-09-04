@@ -20,7 +20,7 @@ header{
     background-color: #1d1e20;
 }
 
-.topo, .fa-map-marker-alt{
+.topo, .fa-map-marker-alt, .movie-list{
    
     color:white;
 }
@@ -38,6 +38,8 @@ header{
 
     display:flex;
     margin: 0 auto;
+    flex-wrap: wrap;
+
 }
 
 .image {
@@ -47,9 +49,20 @@ header{
 }
 
 #movie li {
-
+   
     margin: 10px;
     text-align: center;
     color: white;
+    
+    
+
 }
+
+.movie-list {
+
+    width: auto;
+    padding: 20px;
+}
+
+
 

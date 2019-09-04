@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -17,15 +18,22 @@
     </header>
 
     <section>
-        
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+            ...
+          </div>
         <div class="movie-list">
-
+            <h2> Filmes em cartaz</h2>
+            <hr>
             <ul id="movie"></ul>
 
         </div>	
     </section>
 
     <footer></footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="assets/js/buscar-filme.js"></script>
     <script src="assets/js/lista-filme.js"></script>

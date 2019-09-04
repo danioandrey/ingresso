@@ -59,10 +59,27 @@ header{
 }
 
 .movie-list {
-
+    margin-top: 30px;
     width: auto;
     padding: 20px;
 }
+
+.carousel-cell {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-cell img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+ 
 
 
 

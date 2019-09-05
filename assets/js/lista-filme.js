@@ -1,13 +1,13 @@
 getSelectValue();
 
-function renderList(url, name, trailer, element) {
-  const contentList = createList(url, name, trailer);
+function renderList(imageContent, name, trailer, element) {
+  const contentList = createList(imageContent, name, trailer);
   element.innerHTML += contentList;
 }
 
-function createList(url, name, trailer) {
+function createList(imageContent, name, trailer) {
   return `	
-		 <li><a href="https://${trailer}"><img class="image" src="${url}" /></a><br /><span>${name}</span></li>`;
+		 <li><a href="https://${trailer}"><img class="image" src="${imageContent}" /></a><br /><span>${name}</span></li>`;
 }
 
 let button = document.querySelector("#btnCarregar");

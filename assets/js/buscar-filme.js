@@ -15,7 +15,8 @@ function searchMovie (api) {
 				
 				let trailer;
 				let name  = contentMovie[i].event.title;
-				let url = contentMovie[i].event.images[0].url;
+				let imageContent = contentMovie[i].event.images[0].url;
+				let imageTop = contentMovie[i].event.images[1].url;
 				if (contentMovie[i].event.trailers.length === 0){
 					 trailer = "";
 				}else {
@@ -23,7 +24,7 @@ function searchMovie (api) {
 				}
 				
 				const movie = document.getElementById('movie');	
-				renderList(url,name,trailer, movie);
+				renderList(imageContent,name,trailer, movie);
 					
 		}
 					

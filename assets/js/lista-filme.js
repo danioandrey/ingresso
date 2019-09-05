@@ -1,13 +1,13 @@
 getSelectValue();
 
-function renderlista(url, nome, trailer, element) {
-  const markup = criaLista(url, nome, trailer);
-  element.innerHTML += markup;
+function renderList(url, name, trailer, element) {
+  const contentList = createList(url, name, trailer);
+  element.innerHTML += contentList;
 }
 
-function criaLista(url, nome, trailer) {
+function createList(url, name, trailer) {
   return `	
-		 <li><a href="https://${trailer}"><img class="image" src="${url}" /></a><br /><span>${nome}</span></li>`;
+		 <li><a href="https://${trailer}"><img class="image" src="${url}" /></a><br /><span>${name}</span></li>`;
 }
 
 let button = document.querySelector("#btnCarregar");
@@ -28,7 +28,7 @@ function getSelectValue() {
     api = 2;
   }*/
 
-  buscaFilme(api);
+  searchMovie(api);
 }
 
 function removeTag () {

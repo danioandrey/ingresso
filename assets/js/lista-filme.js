@@ -1,10 +1,15 @@
 getSelectValue();
 
-function renderList(imageContent, name, trailer, element) {
+function renderList(imageContent,imageTop, name, trailer, movie, movieTop) {
+  const contentCarousel = createCarousel(imageTop,name);
   const contentList = createList(imageContent, name, trailer);
-  element.innerHTML += contentList;
+  movieTop.innerHTML += contentCarousel;
+  movie.innerHTML += contentList;
 }
+function createCarousel(imageTop,name) {
+  return `<div class="carousel-cell"><img src="${imageTop}" alt="${name}"></div>`;
 
+}
 function createList(imageContent, name, trailer) {
   return `	
 		 <li><a href="https://${trailer}"><img class="image" src="${imageContent}" /></a><br /><span>${name}</span></li>`;

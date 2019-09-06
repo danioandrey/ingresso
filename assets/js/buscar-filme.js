@@ -24,7 +24,8 @@ function searchMovie (api) {
 				}
 				
 				const movie = document.getElementById('movie');	
-				renderList(imageContent,name,trailer, movie);
+				const movieTop = document.getElementById('teste');
+				renderList(imageContent,imageTop,name,trailer, movie,movieTop);
 					
 		}
 					
